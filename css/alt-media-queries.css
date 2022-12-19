@@ -1,0 +1,21 @@
+/******************* Smartphone media queries portrait view *****************************************/
+@media (min-width: 280px) and (max-width: 500px) and (orientation: portrait) {
+  .home__content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #skills > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: row;
+  }
+
+  .skills__content {
+    width: 23rem;
+  }
+}
