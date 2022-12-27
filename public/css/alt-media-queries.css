@@ -1,7 +1,25 @@
 /******************* Smartphone media queries portrait view *****************************************/
 @media (min-width: 280px) and (max-width: 500px) and (orientation: portrait) {
+  .home__container {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .home__content {
     flex-direction: column;
+    padding-top: 0;
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .home__social {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #right-intro {
+    order: -1;
   }
 }
 
