@@ -21,8 +21,161 @@
   #right-intro {
     order: -1;
   }
+
+  #left-intro {
+    width: 100%;
+    margin-right: 0;
+    padding: 0.4rem;
+  }
+
+  #bottom-left-intro {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
+/******************* Smartphone media queries landscape view *****************************************/
+@media (min-width: 600px) and (max-width: 930px) and (max-height: 430px) and (orientation: landscape) {
+  .home__content {
+    margin-left: 0;
+    padding-top: 1rem;
+  }
+
+  #left-intro {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  #right-intro {
+    width: 13rem;
+    height: 13rem;
+    margin-left: 3rem;
+  }
+
+  #outer-right {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+/******************* Small Tablet media queries portrait view *****************************************/
+@media (min-width: 491px) and (max-width: 760px) and (orientation: portrait) {
+  .home__container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .home__content {
+    flex-direction: column;
+    padding-top: 0;
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .home__social {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #right-intro {
+    order: -1;
+  }
+
+  #left-intro {
+    width: 100%;
+    margin-right: 0;
+    padding: 0.4rem;
+  }
+
+  #bottom-left-intro {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+/******************* Small Tablet media queries landscape view *****************************************/
+@media (min-width: 719px) and (max-width: 1020px) and (min-height: 500px) and (orientation: landscape) {
+  .home__content {
+    margin-left: 0;
+    padding-top: 1rem;
+  }
+
+  #left-intro {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  #right-intro {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  #outer-right {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+/********************************** LARGE TABLET Portarit VIEW ***********************************************/
+@media (min-width: 761px) and (max-width: 920px) and (orientation: portrait) {
+  .home__container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .home__content {
+    flex-direction: column;
+    padding-top: 0;
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .home__social {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #right-intro {
+    order: -1;
+  }
+
+  #left-intro {
+    width: 100%;
+    margin-right: 0;
+    padding: 0.4rem;
+  }
+
+  #bottom-left-intro {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+/********************************** LARGE TABLET Landscape VIEW ***********************************************/
+@media (min-width: 1020px) and (max-width: 1370px) and (min-height: 760px) and (orientation: landscape) {
+  .home__content {
+    margin-left: 0;
+    padding-top: 1rem;
+  }
+
+  #left-intro {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  #right-intro {
+    width: 13rem;
+    height: 13rem;
+    margin-left: 6rem;
+  }
+
+  #outer-right {
+    width: 12rem;
+    height: 12rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   #skills > div > div {
     display: flex;

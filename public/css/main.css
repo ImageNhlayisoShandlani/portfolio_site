@@ -215,6 +215,7 @@ img {
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
+  text-transform: uppercase;
 }
 
 .nav__icon {
@@ -451,10 +452,11 @@ img {
 /* ******************* ABOUT SECTION ***************/
 
 .about__img {
-  width: 200px;
+  width: 250px;
   border-radius: 0.5rem;
   justify-self: center;
   align-self: center;
+  border: 10px solid var(--first-color-second);
 }
 
 .about__description {
