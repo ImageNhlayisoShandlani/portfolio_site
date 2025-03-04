@@ -214,4 +214,8 @@ window.onload = function () {
         message: "fa",
       });
     });
+
+    var getYear = new Date().getFullYear();
+
+    document.getElementById('getCurrentYear').appendChild = new Date().getFullYear();
 };

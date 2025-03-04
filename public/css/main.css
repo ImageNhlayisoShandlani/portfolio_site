@@ -365,6 +365,7 @@ img {
   flex-direction: row;
   margin-top: var(--mb-1-5);
   gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
 #bottom-left-intro p {
@@ -1126,7 +1127,7 @@ img {
   }
 
   .portfolio__img {
-    height: 70%;
+    height: 100%;
   }
 
   .services__container {
