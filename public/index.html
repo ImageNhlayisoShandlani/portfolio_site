@@ -1,1403 +1,1751 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CW6QV15VF7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CW6QV15VF7");
+    </script>
+    
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Image Shandlani Portfolio</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/portfolio-favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/alt-media-queries.css">
-    <title>IN Shandlani Portfolio</title>
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
   </head>
-  <body>
-    <!-- **************************** HEADER MARKUP ************************-->
 
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="" class="nav__logo">IN Shandlani</a>
+  <body class="index-page">
+    <header id="header" class="header dark-background d-flex flex-column">
+      <i class="header-toggle d-xl-none bi bi-list"></i>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">
-                <i class="fa-solid fa-house-user nav__icon"></i> HOME
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="fa-solid fa-user nav__icon"></i> ABOUT
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="fa-solid fa-toolbox nav__icon"></i> Skiils
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#qualification" class="nav__link">
-                <i class="fa-solid fa-clock nav__icon"></i> Experience
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#services" class="nav__link">
-                <i class="fa-solid fa-handshake nav__icon"></i> Services
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">
-                <i class="fa-solid fa-business-time nav__icon"></i> Portfolio
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <i class="fa-solid fa-paper-plane nav__icon"></i> Contact-Me
-              </a>
-            </li>
-          </ul>
-          <i class="fa-solid fa-xmark nav__close" id="nav-close"></i>
-        </div>
+      <div class="profile-img">
+        <img
+          src="assets/img/profile.jpeg"
+          alt=""
+          class="img-fluid rounded-circle"
+          loading="lazy"
+        />
+      </div>
 
-        <div class="nav-btns">
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-        </div>
+      <a
+        href="index.html"
+        class="logo d-flex align-items-center justify-content-center"
+      >
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Image Shandlani</h1>
+      </a>
+
+      <div class="social-links text-center">
+        <a
+          target="_blank"
+          href="https://github.com/ImageNhlayisoShandlani"
+          class="github"
+          ><i class="bi bi-github"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/image-shandlani-291630175/"
+          class="linkedin"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+      </div>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li>
+            <a href="#hero" class="active"
+              ><i class="bi bi-house navicon"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="#about"><i class="bi bi-person navicon"></i> About</a>
+          </li>
+          <li>
+            <a href="#resume"
+              ><i class="bi bi-file-earmark-text navicon"></i> Resume</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio"
+              ><i class="bi bi-images navicon"></i> Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#services"
+              ><i class="bi bi-hdd-stack navicon"></i> Services</a
+            >
+          </li>
+          <li>
+            <a href="#contact"
+              ><i class="bi bi-envelope navicon"></i> Contact</a
+            >
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main class="main">
-      <!-- **************************** HOME PAGE ************************-->
-
-      <section class="home section" id="home">
-        <div class="home__container container grid">
-          <div class="home__content grid">
-            <div class="home__social">
-              <a
-                href="https://www.linkedin.com/in/image-shandlani-291630175/"
-                class="home__social-icon"
-                target="_blank"
-              >
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a
-                href="https://twitter.com/IShondlani"
-                class="home__social-icon"
-                target="_blank"
-              >
-                <i class="fa-brands fa-square-twitter"></i>
-              </a>
-              <a
-                href="https://github.com/ImageNhlayisoShandlani"
-                class="home__social-icon"
-                target="_blank"
-              >
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
-
-            <div id="left-intro">
-              <div id="top-left-intro">Hi there my name is</div>
-              <div id="name-intro">
-                <h2>Image Shandlani</h2>
-                <p>Software Developer</p>
-              </div>
-              <div id="left-intro-description">
-
-                I am Software Developer who is passionate about my work and the field. I am always upskilling and keeping up with trends. I have 6 years of experience in the field, having had contract, freelance and permanent employment acrross a number of companies durung the period. My career started as a Frontend Developer but divesied into a Softwaer Developer. With my expertise In can work on Web based applications & Mobile Native Applications. I also do have hands on experience with some cloud platfroms as well as Agile and DevOps techniques. Below are some of the main tech stacks and technologies that I usually work with
-
-              </div>
-      
-              <div id="bottom-left-intro">
-                <div class="one-technology">
-                  <i class="fa-solid fa-code"></i>
-                  <p>HTML5</p>
-                </div>
-                <div class="one-technology">
-                  <i class="fa-brands fa-sass"></i>
-                  <p>SCSS / CSS</p>
-                </div>
-                <div class="one-technology">
-                  <i class="fa-brands fa-js"></i>
-                  <p>JavaScript</p>
-                </div>
-                <div class="one-technology">
-                  <i class="fa-brands fa-angular"></i>
-                  <p>Angular12+</p>
-                </div>
-                <div class="one-technology">
-                  <i class="fa-brands fa-android"></i>
-                  <p>Flutter</p>
-                </div>
-                <div class="one-technology">
-                  <i class="fa-solid fa-atom"></i>
-                  <p>Ionic</p>
-                </div>
-                <div class="one-technology">
-                  <i class="fa-brands fa-android"></i>
-                  <p>Cordova</p>
-                </div>
-                <div class="one-technology">
-                  <i class="fa-solid fa-keyboard"></i>
-                  <p>TypeScript</p>
-                </div>
-                <div class="one-technology">
-                  <i class="fa-brands fa-react"></i>
-                  <p>React Native / React</p>
-                </div>
-                <div class="one-technology">
-                  <i class="fa-brands fa-wordpress"></i>
-                  <p>WordPress</p>
-                </div>
-                <div class="one-technology">
-                  <i class="fa-brands fa-connectdevelop"></i>
-                  <p>Restfull APIs</p>
-                </div>
-                <div class="one-technology">
-                  <i class="fa-brands fa-node-js"></i>
-                  <p>NodeJS</p>
-                </div>
-                <div class="one-technology">
-                  <i class="fa-brands fa-php"></i>
-                  <p>PHP</p>
-                </div>
-              </div>
-            </div>
-            <div id="right-intro">
-              <div id="outer-right">
-                <div id="inner-right">
-                  <img src="assets/img/me.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-            <!---
-            <div class="home__img">
-              <img src="assets/img/me.jpg" alt="" />
-            </div>
-
-            <div class="home__data">
-              <h1 class="home__title">Hello , my name is Image Shandlani</h1>
-              <h3 class="home__subtitle">Iam a font edn</h3>
-              <p class="home__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
-                rerum, eos ipsum sunt dolores dignissimos vero.
-              </p>
-              <a href="#contact" class="button button--flex"
-                >Contact Me <i class="fa-regular fa-message button__icon"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="home__scroll">
-            <a href="" class="home__scroll-button button--flex">
-              <i class="fa-solid fa-computer-mouse home__scroll-mouse"></i>
-              <span class="home__scroll-name">Scroll Down</span>
-              <i class="fa-solid fa-arrow-down-long home__scroll-arrow"></i>
-            </a>
-          </div>
-
-        -->
-        </div>
-      </section>
-
-      <!-- **************************** About Section ************************-->
-      <section class="about section" id="about">
-        <h2 class="section__title">About Image</h2>
-        <span class="section__subtitle">My Introduction</span>
-
-        <div class="about__container container grid">
-          <img src="assets/img/imi.jpeg" alt="" class="about__img" />
-
-          <div class="about__data">
-            <p class="about__description">
-              A software developer born in 1997, I am very passionate about development and I spend my free time learning new technologies and upskilling whenever I get the chance. Currently I live in Johannesburg but willing to relocate anywhere within South Africa.
-            </p>
-
-            <div class="about__info">
-              <div>
-                <span class="about__info-title">6</span>
-                <span class="about__info-name"
-                  >Years <br />
-                  Experience</span
-                >
-              </div>
-
-              <div>
-                <span class="about__info-title">15+</span>
-                <span class="about__info-name"
-                  >Projects <br />
-                  Completed</span
-                >
-              </div>
-
-              <div>
-                <span class="about__info-title">4</span>
-                <span class="about__info-name"
-                  >Companies <br />
-                  Worked For</span
-                >
-              </div>
-            </div>
-
-            <div class="about__buttons">
-              <a
-                href="assets/files/Shandlani_IN_Resume.docx"
-                download=""
-                class="button button--flex"
-                target="_blank"
-              >
-                Download CV <i class="fa-solid fa-download"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- **************************** MY SKILLS Section ************************-->
-      <section class="skills section" id="skills">
-        <h2 class="section__title">My Skills</h2>
-        <span class="section__subtitle">All My Technical Skills</span>
-
-        <div class="skills__container container grid">
-          <div>
-            <!-- **************************** Skill 1 ************************-->
-            <div class="skills__content skills__open">
-              <div class="skills__header">
-                <i class="fa-solid fa-code skills__icon"></i>
-                <div>
-                  <h1 class="skills__title">Web Development</h1>
-                  <span class="skills__subtitle">6 years of experience</span>
-                </div>
-                <i class="fa-solid fa-circle-chevron-down skills__arrow"></i>
-              </div>
-
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">HTML</h3>
-                    <span class="skills__number">85%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__html"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">CSS3</h3>
-                    <span class="skills__number">85%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__css" style="width: 85%;"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Javascript</h3>
-                    <span class="skills__number">75%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__js" style="width: 75%;"></span>
-                  </div>
-                </div>
-
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">WordPress</h3>
-                    <span class="skills__number">75%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__js" style="width: 75%;"></span>
-                  </div>
-                </div>
-
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Angular</h3>
-                    <span class="skills__number">70%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__angular" style="width: 70%;"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">React</h3>
-                    <span class="skills__number">70%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__angular" style="width: 70%;"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Bootstrap</h3>
-                    <span class="skills__number">80%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__bs"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">PHP</h3>
-                    <span class="skills__number">60%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__php" style="width: 60%;"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">JQuery</h3>
-                    <span class="skills__number">75%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__jq" style="width: 75%;"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">SCSS</h3>
-                    <span class="skills__number">70%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__scss"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">C# / ASP.Net</h3>
-                    <span class="skills__number">45%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__c-sharp" style="width: 45%;"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- **************************** Skill 2 ************************-->
-            <div class="skills__content skills__close">
-              <div class="skills__header">
-                <i class="fa-solid fa-server skills__icon"></i>
-                <div>
-                  <h1 class="skills__title">Mobile Development</h1>
-                  <span class="skills__subtitle"
-                    >5 years of experience</span
-                  >
-                </div>
-                <i class="fa-solid fa-circle-chevron-down skills__arrow"></i>
-              </div>
-
-    
-              <div class="skills__list grid">
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Ionic Framework</h3>
-                    <span class="skills__number">80%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__ionic"></span>
-                  </div>
-                </div>
-               
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Cordova</h3>
-                    <span class="skills__number">75%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__fb" style="width: 75%;"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">React Native (Expo / CLI)</h3>
-                    <span class="skills__number">80%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__fb" style="width: 80%;"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Flutter</h3>
-                    <span class="skills__number">40%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__fb" style="width: 40%;"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Android dev. with Java</h3>
-                    <span class="skills__number">50%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__andr-java"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- **************************** Skill 3 ************************-->
-            <div class="skills__content skills__close">
-              <div class="skills__header">
-                <i class="fa-brands fa-android skills__icon"></i>
-                <div>
-                  <h1 class="skills__title">Back End Dev & Services</h1>
-                  <span class="skills__subtitle">3 year of experience</span>
-                </div>
-                <i class="fa-solid fa-circle-chevron-down skills__arrow"></i>
-              </div>
-
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">NodeJS</h3>
-                    <span class="skills__number">65%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__node"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">
-                      Firebase
-                    </h3>
-                    <span class="skills__number">80%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__flutter" style="width: 80%;"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">
-                      Ionic Appflow CI/CD Pipilines
-                    </h3>
-                    <span class="skills__number">80%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__unity" style="width: 80%;"></span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">
-                      Google Analytics
-                    </h3>
-                    <span class="skills__number">60%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__unity" style="width: 60%;"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- **************************** Skill 4 ************************-->
-            <div class="skills__content skills__close">
-              <div class="skills__header">
-                <i class="fa-solid fa-paintbrush skills__icon"></i>
-                <div>
-                  <h1 class="skills__title">Graphic Design</h1>
-                  <span class="skills__subtitle">1 year of experience</span>
-                </div>
-                <i class="fa-solid fa-circle-chevron-down skills__arrow"></i>
-              </div>
-
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Adobe Photoshop</h3>
-                    <span class="skills__number">50%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__photo-shop"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Adobe After Effects</h3>
-                    <span class="skills__number">65%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__aae"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">3ds Max</h3>
-                    <span class="skills__number">40%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__dsmax"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- **************************** MY Qualifications ************************-->
-      <section class="qualification section" id="qualification">
-        <h2 class="section__title">My Experiences</h2>
-        <span class="section__subtitle">Educationional and Professional</span>
-
-        <div class="qualification__container container">
-          <div class="qualification__tabs">
-            <div
-              class="qualification__button button--flex qualification__active"
-              data-target="#education"
-            >
-              <i class="fa-solid fa-graduation-cap qualification__icon"></i>
-              Education
-            </div>
-            <div class="qualification__button button--flex" data-target="#work">
-              <i class="fa-solid fa-briefcase qualification__icon"></i>
-              Work
-            </div>
-          </div>
-
-          <div class="qualifications__sections">
-            <!-- **************************** Qualification Content 1 ************************-->
-            <div
-              class="qualification__content qualification__active"
-              data-content
-              id="education"
-            >
-              <!-- **************************** Qualification 1 ************************-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">
-                    National Diploma : ICT (Multimedia)
-                  </h3>
-                  <span class="qualification__subtitle"
-                    >Tshwane University of Technology</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="fa-regular fa-calendar-days"></i>
-                    2016 - 2019
-                  </div>
-                </div>
-
-                <div>
-                  <i class="fa-solid fa-caret-left"></i>
-                </div>
-              </div>
-
-              <!-- **************************** Qualification 2 ************************-->
-              <div class="qualification__data">
-                <div></div>
-                <div>
-                  <i class="fa-solid fa-caret-right"></i>
-                </div>
-                <div>
-                  <h3 class="qualification__title">
-                    Grade 12 (Matric)
-                  </h3>
-                  <span class="qualification__subtitle">Topaz Secondary School</span>
-                  <div class="qualification__calender">
-                    <i class="fa-regular fa-calendar-days"></i>
-                    2011 - 2016
-                  </div>
-                </div>
-              </div>
-
-              <!-- **************************** Qualification 3 ************************-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title"></h3>
-                  <span class="qualification__subtitle"
-                    >Introduction to Machine Learning</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="fa-regular fa-calendar-days"></i>
-                    2022 - 2022
-                  </div>
-                </div>
-
-                <div>
-                  <i class="fa-solid fa-caret-left"></i>
-                </div>
-              </div>
-
-              <div class="qualification__data">
-                <div></div>
-                <div>
-                  <i class="fa-solid fa-caret-right"></i>
-                </div>
-                <div>
-                  <h3 class="qualification__title">
-                    Build a Full Website using WordPress
-                  </h3>
-                  <span class="qualification__subtitle">Coursera</span>
-                  <div class="qualification__calender">
-                    <i class="fa-regular fa-calendar-days"></i>
-                    2023 - 2023
-                  </div>
-                </div>
-              </div>
-
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">WordPress for Beginners - Master WordPress</h3>
-                  <span class="qualification__subtitle"
-                    >
-                    Udemy
-                    </span
-                  >
-                  <div class="qualification__calender">
-                    <i class="fa-regular fa-calendar-days"></i>
-                    2023 - 2023
-                  </div>
-                </div>
-
-                <div>
-                  <i class="fa-solid fa-caret-left"></i>
-                </div>
-              </div>
-            </div>
-
-            <!-- **************************** Qualification Content 2 ************************-->
-            <div class="qualification__content" data-content id="work">
-              <!-- **************************** Qualification 1 ************************-->
-
-              <div class="qualification__data">
-                <div></div>
-                <div>
-                  <i class="fa-solid fa-caret-right"></i>
-                  <!-- <span class="qualification__line"></span> -->
-                </div>
-                <div>
-                  <h3 class="qualification__title">
-                    Software Developer
-                  </h3>
-                  <span class="qualification__subtitle">SABC</span>
-                  <div class="qualification__calender">
-                    <i class="fa-regular fa-calendar-days"></i>
-                    May 2023 - Present
-                  </div>
-                </div>
-              </div>
-
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">
-                    Front End Developer
-                  </h3>
-                  <span class="qualification__subtitle"
-                    >MK Innovations</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="fa-regular fa-calendar-days"></i>
-                    Jan 2022 - Dec 2022
-                  </div>
-                </div>
-
-                <div>
-                  <i class="fa-solid fa-caret-left"></i>
-                </div>
-              </div>
-
-              <!-- **************************** Qualification 2 ************************-->
-              <div class="qualification__data">
-                <div></div>
-                <div>
-                  <i class="fa-solid fa-caret-right"></i>
-                  <!-- <span class="qualification__line"></span> -->
-                </div>
-                <div>
-                  <h3 class="qualification__title">
-                    Front End Developer (Freelance)
-                  </h3>
-                  <span class="qualification__subtitle">3 projects managed (more info on cv)</span>
-                  <div class="qualification__calender">
-                    <i class="fa-regular fa-calendar-days"></i>
-                    July 2020 - Dec 2021
-                  </div>
-                </div>
-              </div>
-
-              <!-- **************************** Qualification 3 ************************-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">Web Developer</h3>
-                  <span class="qualification__subtitle"
-                    >Mkholo Projects</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="fa-regular fa-calendar-days"></i>
-                    July 2019 - Jun 2020
-                  </div>
-                </div>
-
-                <div>
-                  <i class="fa-solid fa-caret-left"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- **************************** MY SERVICES ************************ -->
-      <section class="services section" id="services">
-        <h2 class="section__title">Services</h2>
-        <span class="section__subtitle">What I Can Offer</span>
-
-        <div class="services__container container grid">
-          <!-- **************************** SERVICES 1 ************************-->
-          <div class="services__content">
-            <div>
-              <i class="fa-solid fa-code services__icon"></i>
-              <h3 class="services__title">Web Apps</h3>
-            </div>
-
+      <!-- Hero Section -->
+      <section id="hero" class="hero section dark-background">
+        <img
+          src="assets/img/hero-image.jpeg"
+          alt=""
+          data-aos="fade-in"
+          class=""
+          loading="lazy"
+        />
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <h2>Image Nhlayiso Shandlani</h2>
+          <p>
+            I'm a
             <span
-              class="button button--flex button--small button--link services__button"
-            >
-              View More
-              <i class="fa-regular fa-circle-right button__icon"></i>
-            </span>
+              class="typed"
+              data-typed-items="Web Developer, Mobile Developer, Mobile Developer, Full Stack, Software Engineer"
+              >Software Developer</span
+            ><span
+              class="typed-cursor typed-cursor--blink"
+              aria-hidden="true"
+            ></span
+            ><span
+              class="typed-cursor typed-cursor--blink"
+              aria-hidden="true"
+            ></span>
+          </p>
+        </div>
+      </section>
+      <!-- /Hero Section -->
 
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <h4 class="services__modal-title">
-                  User Interface Dev. (Front End)
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>About</h2>
+          <p>
+            As a software developer with over 6 years of experience, I
+            specialize in web and app development. I have worked with various
+            frameworks such as React/React Native, Ionic, PHP, and NodeJs to
+            create user-friendly interfaces for web apps and native Android and
+            iOS apps. I am also skilled in REST APIs, WordPress, FIrebase,
+            Google Ad Manager, and Google Analytics. My goal is to leverage my
+            technical skills and creativity to deliver innovative solutions that
+            enhance user experience and functionality. I am always eager to
+            learn new technologies and collaborate with diverse teams to achieve
+            project goals.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-4">
+              <img
+                src="assets/img/profile-square.jpeg"
+                class="img-fluid"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <div class="col-lg-8 content">
+              <h2>Full Stack Web &amp; Mobile Developer.</h2>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Birthday:</strong> <span>22 May 1997</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>LinkedIn:</strong>
+                      <span
+                        ><a
+                          target="_blank"
+                          href="https://www.linkedin.com/in/image-shandlani-291630175/"
+                          >View Profile</a
+                        ></span
+                      >
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Phone:</strong> <span>+27 82 842 5440</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i> <strong>City:</strong>
+                      <span>Johannesburg, RSA</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
+                      <span id="age">
+                        <script>
+                          document.getElementById("age").innerHTML =
+                            new Date().getFullYear() - 1997;
+                        </script>
+                      </span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Qualification:</strong>
+                      <span>Nat Diploma: ICT</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Email:</strong>
+                      <span>shondlanihlayiso@gmail.com</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Availability:</strong> <span>14 days</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="py-3">
+                I am a versatile and hard-working software developer with over 6
+                years of experience, specializing in web and app development. I
+                am always upskilling and learning to stay up to date with trends
+                and new technologies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+
+      <!-- Stats Section -->
+      <section id="stats" class="stats section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item">
+                <i class="bi bi-emoji-smile"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="20"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>
+                  <strong>Happy Clients</strong>
+                  <span>product owners worked with</span>
+                </p>
+              </div>
+            </div>
+            <!-- End Stats Item -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item">
+                <i class="bi bi-journal-richtext"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="32"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>
+                  <strong>Projects</strong>
+                  <span>web and app projects for clients</span>
+                </p>
+              </div>
+            </div>
+            <!-- End Stats Item -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item">
+                <i class="bi bi-clock"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="6"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>
+                  <strong>Years of expereince</strong>
+                  <span>aut commodi quaerat</span>
+                </p>
+              </div>
+            </div>
+            <!-- End Stats Item -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item">
+                <i class="bi bi-people"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="5"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>
+                  <strong>Companies</strong>
+                  <span>organizations and teams worked for</span>
+                </p>
+              </div>
+            </div>
+            <!-- End Stats Item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Stats Section -->
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Skills</h2>
+          <p>
+            Ranging from web and mobile application programming languages and
+            frameworks. WIth Rest API's integration and cloud platforms
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row skills-content skills-animation">
+            <div class="col-lg-6">
+              <div class="progress">
+                <span class="skill"
+                  ><span>HTML</span> <i class="val">100%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>CSS/SCSS</span> <i class="val">95%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>JavaScript/TypeScript</span>
+                  <i class="val">85%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Docker</span> <i class="val">50%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Google Cloud</span> <i class="val">75%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"
+                  ><span>REST API's</span> <i class="val">80%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Java/Kotlin</span> <i class="val">45%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="45"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Angular 12+</span> <i class="val">65%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="65"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Redux</span> <i class="val">70%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+            </div>
+
+            <div class="col-lg-6">
+              <div class="progress">
+                <span class="skill"
+                  ><span>PHP</span> <i class="val">65%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="65"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>WordPress/CMS</span> <i class="val">85%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>React/React Native</span> <i class="val">80%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Ionic Capacitor/Cordova</span>
+                  <i class="val">85%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Goole Play Console / App Store Connect</span>
+                  <i class="val">95%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>NodeJs</span> <i class="val">65%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="65"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Swift/Objective C</span> <i class="val">40%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="40"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Python / ML Models</span> <i class="val">35%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="35"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Jest / Jasmine / Karma</span>
+                  <i class="val">55%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="55"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Skills Section -->
+
+      <!-- Resume Section -->
+      <section id="resume" class="resume section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Resume</h2>
+          <p>
+            Brief summary of my work exprience for previous and current role,
+            also goes through my education background and relevant
+            certifications
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Sumary</h3>
+
+              <div class="resume-item pb-0">
+                <h4>Image Nhlayiso Shandlani</h4>
+                <p>
+                  <em
+                    >Versatile and hard working software developer with over 6
+                    years of experience, I specialize in web and app
+                    development. Always upskilling and learning to stay up to
+                    date with trends and new technologies.</em
+                  >
+                </p>
+                <ul>
+                  <li>Protea Glen, Johannesburg, RSA</li>
+                  <li>+27 82 842 5440</li>
+                  <li>shondlanihlayiso@gmail.com</li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>National Diploma: ICT (Multimedia)</h4>
+                <h5>2016 - 2019</h5>
+                <p><em>Tshwane University of Technology, Pretoria, RSA</em></p>
+                <p>
+                  Completed my studies in 2019, under the faculty of Computer
+                  Science. Learned software development principles, graphic
+                  design and industry exposure
+                </p>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>React Native – The Practical Guide</h4>
+                <h5>2024 - 2025</h5>
+                <p><em>Udemy</em></p>
+                <p>Online course deep diving into React Native development</p>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>WordPress for Beginners – Master WordPress</h4>
+                <h5>2023 - 2023</h5>
+                <p><em>Coursera</em></p>
+                <p>Introduction course into WordPress development</p>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>Introduction to Machine Learning</h4>
+                <h5>2022 - 2022</h5>
+                <p><em>Kaggle</em></p>
+                <p>
+                  Machine learning and AI development introduction using Python
+                  models and numpy
+                </p>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>Docker & Kubernetes: The Practical Guide</h4>
+                <h5>2025 - <b>In-Progress</b></h5>
+                <p><em>Udemy</em></p>
+                <p>
+                  Machine learning and AI development introduction using Python
+                  models and numpy
+                </p>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>Become a WordPress Developer: Unlocking Power with Code</h4>
+                <h5>2024 - <b>In-Progress</b></h5>
+                <p><em>Udemy</em></p>
+                <p>
+                  In depth dive into WordPress development, only custom theme
+                  and plugin development. No prebuilt themes, page builders and
+                  downloaded plugins
+                </p>
+              </div>
+              <!-- Edn Resume Item -->
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-item">
+                <h4>Software Developer: Web and App</h4>
+                <h5>2023 - Present</h5>
+                <p>
+                  <em
+                    >SABC (South African Broadcasting Corporation),
+                    Johannesburg, RSA
+                  </em>
+                </p>
+                <ul>
+                  <li>
+                    Managed testing and production tracks on Google Play Console
+                    & App Store Connect. Implemented state management (Redux,
+                    RxJS).
+                  </li>
+                  <li>
+                    Developed Node.js/Express APIs with TypeScript and Docker
+                  </li>
+                  <li>
+                    Delivered 10+ WordPress and React websites, integrating SEO
+                    and Google Cloud services.
+                  </li>
+                  <li>
+                    Worked in an agile team, using Git (BitBucket) and Jira for
+                    collabartion
+                  </li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>Frontend Developer</h4>
+                <h5>Jan 2022 - Dec 2022</h5>
+                <p><em>MK Innovations , Nelspruit, RSA</em></p>
+                <ul>
+                  <li>
+                    Created an Angular/Ionic (Capacitor) app with Firebase and
+                    Angular unit testing.
+                  </li>
+                  <li>Built 3 websites using React, Angular, PHP, Bootstrap</li>
+                  <li>
+                    Git (Github) for source control and Slack for collaboration
+                  </li>
+                  <li>
+                    Created 4+ design presentations and proposals a month for
+                    clients and account managers
+                  </li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>Frontend Developer (Freelance)</h4>
+                <h5>Nov 2021 - Jan 2022</h5>
+                <p><em>Yellow Bin SA, Johannesburg, RSA</em></p>
+                <ul>
+                  <li>
+                    Delivered cross-platform solutions with Angular, Ionic and
+                    Node.js with Firebase integration.
+                  </li>
+                  <li>
+                    Git and Slack used for source control and collaboration
+                  </li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>Frontend Developer (Freelance)</h4>
+                <h5>Mar 2021 - Jul 2021</h5>
+                <p><em>Onkas Hub , Pretoria, RSA</em></p>
+                <ul>
+                  <li>
+                    Built Angular/Ionic/Firebase hybrid web and mobile app with
+                    HERE Maps API intergrations
+                  </li>
+                  <li>Deployed to Google Play Console.</li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>Frontend Developer (Freelance)</h4>
+                <h5>Nov 2021 - Jan 2022</h5>
+                <p><em>Thuma Mina Delivery, Nelspruit, RSA</em></p>
+                <ul>
+                  <li>Built Angular/Ionic/Firebase app with HERE Maps API</li>
+                  <li>Deployed to Google Play Console</li>
+                  <li>Managed hosting and environment on Afrihost</li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>Web Developer</h4>
+                <h5>July 2019 - Jul 2020</h5>
+                <p><em>Mkholo Projects, Nelspruit, RSA</em></p>
+                <ul>
+                  <li>
+                    Developed 3 PHP/HTML/JavaScript/Bootstrap/MySQL websites
+                  </li>
+                  <li>Managed hosting on Afrihos linux based environment</li>
+                  <li>Used Git (Github) for source and version control</li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Resume Section -->
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Portfolio</h2>
+          <p>
+            A snapshot into my previous works. Includes both mobile and web
+            applications developed for clients and companies. Showcasing a range
+            of technologies and industries.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <ul
+              class="portfolio-filters isotope-filters"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-web">Websites</li>
+              <li data-filter=".filter-app">Mobile Apps</li>
+            </ul>
+            <!-- End Portfolio Filters -->
+
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/5FM-Web.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>5FM Website</h4>
+                    <p>Official website for 5FM radio station</p>
+                    <a
+                      href="assets/img/portfolio/5FM-Web.png"
+                      title="5FM Website"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+
+                    <a
+                      target="_blank"
+                      href="https://www.5fm.co.za/5fm/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/Good-Hope-App.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Good Hope FM App</h4>
+                    <p>Mobile application for Good Hope FM radio station</p>
+                    <a
+                      href="assets/img/portfolio/Good-Hope-App.png"
+                      title="Good Hope FM App"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://apps.apple.com/us/app/good-hope-fm/id1624422859"
+                      title="App Store"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/Lotus.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Lotus FM Website</h4>
+                    <p>Official website for Lotus FM radio station</p>
+                    <a
+                      href="assets/img/portfolio/Lotus.png"
+                      title="Lotus FM Website"
+                      data-gallery="portfolio-gallery-branding"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://www.lotusfm.co.za/lotusfm/"
+                      title="View site"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/UK-APp.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Ukhozi FM App</h4>
+                    <p>Mobile application for Ukhozi FM radio station</p>
+                    <a
+                      href="assets/img/portfolio/UK-APp.png"
+                      title="Ukhozi FM App"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://play.google.com/store/apps/details?id=com.ukhozifm"
+                      title="App Store"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/S+-Web.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>SABC+ Website</h4>
+                    <p>Official website for SABC+ streaming service</p>
+                    <a
+                      href="assets/img/portfolio/S+-Web.png"
+                      title="SABC+ Website"
+                      data-gallery="portfolio-gallery-branding"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://sabc-plus.com/"
+                      title="View site"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/Metro-App.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Metro FM App</h4>
+                    <p>Mobile application for Metro FM radio station</p>
+                    <a
+                      href="assets/img/portfolio/Metro-App.png"
+                      title="Metro FM App"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://apps.apple.com/us/app/metro-fm/id6480720090"
+                      title="App Store"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/5FM-App.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>5 FM App</h4>
+                    <p>Mobile application for 5 FM radio station</p>
+                    <a
+                      href="assets/img/portfolio/5FM-App.png"
+                      title="5 FM App"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://apps.apple.com/us/app/5fm/id1616187022"
+                      title="App Store"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/MK.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>MK Innovations Website</h4>
+                    <p>Official website for MK Innovations</p>
+                    <a
+                      href="assets/img/portfolio/MK.png"
+                      title="MK Innovations Website"
+                      data-gallery="portfolio-gallery-branding"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://www.mkinnovations.co.za/"
+                      title="View site"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/News-app.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>SABC News App</h4>
+                    <p>Mobile application for SABC News</p>
+                    <a
+                      href="assets/img/portfolio/News-app.png"
+                      title="SABC News FM App"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://apps.apple.com/us/app/sabc-news-app/id1459514467"
+                      title="App Store"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/Uk-web.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Ukhozi FM Website</h4>
+                    <p>Official website for Ukhozi FM</p>
+                    <a
+                      href="assets/img/portfolio/Uk-web.png"
+                      title="Ukhozi FM Website"
+                      data-gallery="portfolio-gallery-branding"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://www.ukhozifm.co.za/ukhozifm/"
+                      title="View site"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/channel-africa-web.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Channel Africa Website</h4>
+                    <p>Official website for Channel Africa</p>
+                    <a
+                      href="assets/img/portfolio/channel-africa-web.png"
+                      title="Channel Africa Website"
+                      data-gallery="portfolio-gallery-branding"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://www.channelafrica.co.za/channelafrica/"
+                      title="View site"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/art.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>SABC Art Website</h4>
+                    <p>Official website for SABC Art</p>
+                    <a
+                      href="assets/img/portfolio/art.png"
+                      title="SABC Art Website"
+                      data-gallery="portfolio-gallery-branding"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://www.sabcart.co.za/"
+                      title="View site"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/RSG-app.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>RSG App</h4>
+                    <p>Mobile application for RSG</p>
+                    <a
+                      href="assets/img/portfolio/RSG-app.png"
+                      title="RSG App"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://apps.apple.com/us/app/rsg/id6480790523"
+                      title="App Store"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/S3.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>SABC 3 Website</h4>
+                    <p>Official website for SABC 3</p>
+                    <a
+                      href="assets/img/portfolio/S3.png"
+                      title="SABC 3 Website"
+                      data-gallery="portfolio-gallery-branding"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://www.sabc3.co.za/sabc3/"
+                      title="View site"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/Metro-Site.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Metro FM Website</h4>
+                    <p>Official website for Metro FM</p>
+                    <a
+                      href="assets/img/portfolio/Metro-Site.png"
+                      title="Metro FM Website"
+                      data-gallery="portfolio-gallery-branding"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://www.metrofm.co.za/metro-fm/"
+                      title="View site"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/Radio2000-App.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Radio 2000 App</h4>
+                    <p>Mobile application for Radio 2000</p>
+                    <a
+                      href="assets/img/portfolio/Radio2000-App.png"
+                      title="Radio 2000 App"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://play.google.com/store/apps/details?id=com.sabc.Radio2000app"
+                      title="App Store"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/education.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>SABC Education Website</h4>
+                    <p>Official website for SABC Education</p>
+                    <a
+                      href="assets/img/portfolio/education.png"
+                      title="SABC Education Website"
+                      data-gallery="portfolio-gallery-branding"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://www.sabceducation.co.za/sabceducation/"
+                      title="View site"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/Umhlobo-App.png"
+                    class="img-fluid"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Umhlobo Wenene FM App</h4>
+                    <p>Mobile application for Umhlobo Wenene FM</p>
+                    <a
+                      href="assets/img/portfolio/Umhlobo-App.png"
+                      title="Umhlobo Wenene FM App"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://apps.apple.com/us/app/umhlobo-wenene-fm/id6760612087"
+                      title="App Store"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Section -->
+
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Services</h2>
+          <p>
+            Below are the services I offer as a software developer, covering a
+            range of web and mobile development solutions. Whether you need a
+            custom website, a mobile app, or ongoing maintenance and support, I
+            have the skills and experience to deliver high-quality results
+            tailored to your needs.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row gy-4">
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-browser-edge"></i>
+              </div>
+              <div>
+                <h4 class="title">
+                  <a href="#" class="stretched-link">Web Development</a>
                 </h4>
-                <i class="fa-solid fa-xmark services__modal-close"></i>
-
-                <ul class="services__modal-services grid">
-                  <li class="services__modal-service">
-                    <i
-                      class="fa-regular fa-square-check service__modal-icon"
-                    ></i>
-                    Translate UI / UX designs into code that displays the front
-                    end of applications
-                  </li>
-                  <li class="services__modal-service">
-                    <i
-                      class="fa-regular fa-square-check service__modal-icon"
-                    ></i>
-                    I can use a variety of tools and tech stacks for development
-                  </li>
-                  <li class="services__modal-service">
-                    <i
-                      class="fa-regular fa-square-check service__modal-icon"
-                    ></i>
-                    Optimizing apps for web and mobile
-                  </li>
-                  <li class="services__modal-service">
-                    <i
-                      class="fa-regular fa-square-check service__modal-icon"
-                    ></i>
-                    Create scalable user interfaces for back end developers
-                  </li>
-                  <li class="services__modal-service">
-                    <i
-                      class="fa-regular fa-square-check service__modal-icon"
-                    ></i>
-                    Make the entire webapp fully responsive
-                  </li>
-                </ul>
+                <p class="description">
+                  I use wide range of tools, like HTml, CSS, JavaScript, React,
+                  Angular, PHP and WordPress to create
+                </p>
               </div>
             </div>
-          </div>
+            <!-- End Service Item -->
 
-          <!-- **************************** SERVICES 2 ************************-->
-          <div class="services__content">
-            <div>
-              <i class="fa-brands fa-android services__icon"></i>
-              <h3 class="services__title">App Dev. / IOS & Android</h3>
-            </div>
-
-            <span
-              class="button button--flex button--small button--link services__button"
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="200"
             >
-              View More
-              <i class="fa-regular fa-circle-right button__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <h4 class="services__modal-title">App Development</h4>
-                <i class="fa-solid fa-xmark services__modal-close"></i>
-
-                <ul class="services__modal-services grid">
-                  <li class="services__modal-service">
-                    <i
-                      class="fa-regular fa-square-check service__modal-icon"
-                    ></i>
-                    Design and develop the user interfaces for native mobile apps
-                  </li>
-                  <li class="services__modal-service">
-                    <i
-                      class="fa-regular fa-square-check service__modal-icon"
-                    ></i>
-                    Connecting the app to a remote realtime database like
-                    firebase for data transfer and storage or WP Json Rest APi
-                  </li>
-                  <li class="services__modal-service">
-                    <i
-                      class="fa-regular fa-square-check service__modal-icon"
-                    ></i>
-                    I can develope mobile apps, with React Native, Ionic, Cordova or Flutter
-                  </li>
-                </ul>
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-google-play"></i>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- **************************** My Portfolio ************************-->
-      <section class="portfolio section" id="portfolio">
-        <h2 class="section__title">Portfolio</h2>
-        <span class="section__subtitle">My Previous Work</span>
-
-        <div class="portfolio__container container swiper-container">
-          <div class="swiper-wrapper">
-
-
-            <!-- -->
-            <div class="portfolio__content grid swiper-slide">
-              <div style="display: flex; align-items: center; justify-content: space-around;">
-              <img src="assets/img/News-i.png" alt="" class="portfolio__img" style="width: 100px; height: 225px;"/>
-              <img src="assets/img/News-A.png" alt="" class="portfolio__img" style="width: 100px; height: 225px;"/>
-               </div>
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">SABC News Mobile App</h3>
-                <p class="portfolio__description">
-                  Took over the app, to develope new features. Plubished different versions to the app store and maintained it
-                </p>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.sabc.sabcnews"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  Android
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-
-                <a
-                  href="https://apps.apple.com/us/app/sabc-news-app/id1459514467"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  iOS
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="portfolio__content grid swiper-slide">
-              <div style="display: flex; align-items: center; justify-content: space-around;">
-              <img src="assets/img/5FM1.png" alt="" class="portfolio__img" style="width: 100px; height: 225px;"/>
-              <img src="assets/img/5FM2.png" alt="" class="portfolio__img" style="width: 100px; height: 225px;"/>
-              </div>
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">5FM Mobile App</h3>
-                <p class="portfolio__description">
-                  Part of the development team responsible for the development, release and maintainace of the 5FM mobile app
-                </p>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.fivefm"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  Android
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-
-                <a
-                  href="https://apps.apple.com/us/app/5fm/id1616187022"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  iOS
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-            <!-- **************************** My Portfolio 1************************-->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/image.png"
-                alt=""
-                class="portfolio__img"
-              />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">SABC+</h3>
-                <p class="portfolio__description">
-                  Contributed to the development of the SABC's new streaming platfrom website, responsible for testing and builds on different TV based opearating systems (LG, Samsung, Android TV etc.)
-                </p>
-                <a
-                  href="https://sabc-plus.com/"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  View
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-            
-            <!-- **************************** My Portfolio 1************************-->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/UKW.png"
-                alt=""
-                class="portfolio__img"
-              />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Ukhozi FM Web</h3>
-                <p class="portfolio__description">
-                  Part of the development team that build and maintaned the official Ukhozi FM website
-                </p>
-                <a
-                  href="https://www.ukhozifm.co.za/ukhozifm/"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  View
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- **************************** My Portfolio 2************************-->
-            <div class="portfolio__content grid swiper-slide">
-              <div style="display: flex; align-items: center; justify-content: space-around;">
-              <img src="assets/img/UKA.png" alt="" class="portfolio__img" style="width: 100px; height: 225px;"/>
-              <img src="assets/img/UKi.png" alt="" class="portfolio__img" style="width: 100px; height: 225px;"/>
-              </div>
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Ukhozi FM Mobile</h3>
-                <p class="portfolio__description">
-                  Developed, published to the app stores and maintanained the station's mobile application
-                </p>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.ukhozifm"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  Android
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-
-                <a
-                  href="https://apps.apple.com/us/app/ukhozi-fm/id6470179092"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  iOS
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- **************************** My Portfolio 3************************-->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/MFW.png" alt="" class="portfolio__img" />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Metro FM Website</h3>
-                <p class="portfolio__description">
-                  Part of the development team that build and maintaned the official Metro FM Website
-                </p>
-                <a
-                  href="https://www.metrofm.co.za/metro-fm/"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  View
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="portfolio__content grid swiper-slide">
-              <div style="display: flex; align-items: center; justify-content: space-around;">
-              <img src="assets/img/MFA.png" alt="" class="portfolio__img" style="width: 100px; height: 225px;"/>
-              <img src="assets/img/MFi.png" alt="" class="portfolio__img" style="width: 100px; height: 225px;"/>
-               </div>
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Metro FM Mobile</h3>
-                <p class="portfolio__description">
-                  Developed, published to the app stores and maintanained the station's mobile application
-                </p>
-                <a
-                  href="https://play.google.com/store/apps/details?id=co.za.metrofm.app"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  Android
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-
-                <a
-                  href="https://apps.apple.com/us/app/metro-fm/id6480720090"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  iOS
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-            
-
-
-            <!-- **************************** My Portfolio 2************************-->
-            <div class="portfolio__content grid swiper-slide">
-              <div style="display: flex; align-items: center; justify-content: space-around;">
-              <img src="assets/img/bin2.png" alt="" class="portfolio__img" style="width: 100px; height: 225px;"/>
-              <img src="assets/img/bin.png" alt="" class="portfolio__img" style="width: 100px; height: 225px;"/>
-              </div>
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Yellow Bin SA</h3>
-                <p class="portfolio__description">
-                  Collabarated in the development and publishing of the app to stores and website
-                </p>
-                <a
-                  href="https://play.google.com/store/apps/details?id=za.co.yellowbin"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  Android
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-
-            <div class="portfolio__content grid swiper-slide">
-              <div style="display: flex; align-items: center; justify-content: space-around;">
-              <img src="assets/img/R2Ki.png" alt="" class="portfolio__img" style="width: 100px; height: 225px;"/>
-              <img src="assets/img/R2Ka.png" alt="" class="portfolio__img" style="width: 100px; height: 225px;"/>
-              </div>
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Radio 2000 Mobile App</h3>
-                <p class="portfolio__description">
-                  Part of the development team responsible for the development, release and maintainace of the Radio 2000 mobile app
-                </p>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.sabc.Radio2000app"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  Android
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-
-                <a
-                  href="https://apps.apple.com/us/app/radio-2000/id6470282198"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  iOS
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/S2.png" alt="" class="portfolio__img" />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">SABC 2</h3>
-                <p class="portfolio__description">
-                  Contributed to, released and maintained the SABC 2 website
-                </p>
-                <a
-                  href="https://www.sabc2.co.za/sabc2/"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  View
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/s3.png" alt="" class="portfolio__img" />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">SABC 3</h3>
-                <p class="portfolio__description">
-                  Contributed to, released and maintained the SABC 3 website
-                </p>
-                <a
-                  href="https://www.sabc3.co.za/sabc3/"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  View
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/education.png" alt="" class="portfolio__img" />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">SABC Education</h3>
-                <p class="portfolio__description">
-                  Contributor to the development, maintainance and release of the SABC Education WordPress site
-                </p>
-                <a
-                  href="http://www.sabceducation.co.za/sabceducation/"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  View
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-            <!-- **************************** My Portfolio 4************************-->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/thuma_snap.PNG" alt="" class="portfolio__img" />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Thuma Mina</h3>
-                <p class="portfolio__description">
-                  Part of the development team that made the food and essentials food delivery app. Role : Software Developer
-                </p>
-                <a
-                  href="https://www.2mamina.co.za/home/login"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  Web
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-                <a
-                  href="https://play.google.com/store/apps/details?id=co.za.thumaminadelivery"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  Android
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-
-            
-            <!-- **************************** My Portfolio 5************************-->
-            <!-- <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/maliwa.PNG" alt="" class="portfolio__img" />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Maliwa Funerals</h3>
-                <p class="portfolio__description">
-                  Developed the user interface for this funeral parlour site based in Mpumalanga, Role : Frontend Developer
-                </p>
-                <a
-                  href="https://maliwa-funerals.web.app/"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  View
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-              </div>
-            </div> -->
-
-
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/Sales.png" alt="" class="portfolio__img" />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">SABC Sales</h3>
-                <p class="portfolio__description">
-                  Part of the development team to develop new features and maintain the SABC's Sales Website
-                </p>
-                <a
-                  href="https://www.sabcsales.co.za/sabcsales/"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  View
-                  <i class="fa-solid fa-angles-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
-
-      <!-- **************************** Projects ************************-->
-
-      <section class="project section">
-        <div class="project__bg">
-          <div class="project__container container grid">
-            <div class="project__data">
-              <h2 class="project__title">
-                Open for a permanent or long-term contract
-              </h2>
-              <p class="project__description">
-                Contact me for more information
-              </p>
-              <a href="#contact" class="button button--flex button--white" target="_blank">
-                Contact Me
-                <i class="fa-solid fa-phone project__icon"></i>
-              </a>
-            </div>
-
-            <img src="assets/img/me.jpg" alt="" class="project__img" />
-          </div>
-        </div>
-      </section>
-
-      <!-- **************************** Contact Me ************************-->
-
-      <section class="contact section" id="contact">
-        <h2 class="section__title">Contact Me</h2>
-        <span class="section__subtitle">Get in touch</span>
-
-        <div class="contact__container container grid">
-          <div>
-            <div class="contact__informaion">
-              <i class="fa-solid fa-phone contact__icon"></i>
               <div>
-                <h3 class="contact__title">Call Me</h3>
-                <span class="contact__subtitle">082 842 5440</span>
+                <h4 class="title">
+                  <a href="#" class="stretched-link">App Development</a>
+                </h4>
+                <p class="description">
+                  I develop high-quality mobile applications for both iOS and
+                  Android platforms, ensuring a seamless user experience.
+                </p>
               </div>
             </div>
+            <!-- End Service Item -->
 
-            <div class="contact__informaion">
-              <i class="fa-solid fa-at contact__icon"></i>
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-bar-chart"></i>
+              </div>
               <div>
-                <h3 class="contact__title">Email Me</h3>
-                <span class="contact__subtitle"
-                  >shondlanihlayiso@gmail.com</span
-                >
+                <h4 class="title">
+                  <a href="#" class="stretched-link">Containerization</a>
+                </h4>
+                <p class="description">
+                  I can set up networks and deploy applications using Docker,
+                  ensuring efficient and scalable solutions for your projects.
+                </p>
               </div>
             </div>
+            <!-- End Service Item -->
 
-            <div class="contact__informaion">
-              <i class="fa-solid fa-location-dot contact__icon"></i>
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-apple"></i>
+              </div>
               <div>
-                <h3 class="contact__title">My Location</h3>
-                <span class="contact__subtitle"
-                  >Johannesburg, Gauteng, South Africa</span
+                <h4 class="title">
+                  <a href="service-details.html" class="stretched-link"
+                    >App Deployment</a
+                  >
+                </h4>
+                <p class="description">
+                  I can help you deploy your mobile applications to the
+                  respective app stores, ensuring a smooth and successful
+                  launch.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-info-square"></i>
+              </div>
+              <div>
+                <h4 class="title">
+                  <a href="#" class="stretched-link">Documentation</a>
+                </h4>
+                <p class="description">
+                  I provide comprehensive documentation for all my projects,
+                  ensuring that clients and team members have the information
+                  they need to understand and maintain the code.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+              <div>
+                <h4 class="title">
+                  <a href="#" class="stretched-link">Maintenance and Support</a>
+                </h4>
+                <p class="description">
+                  I can take over systems and provide sufficient maintenance and
+                  support to ensure your applications remain up-to-date, secure,
+                  and running smoothly.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Services Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>
+            if you have any questions, would like to discuss a project, or just
+            want to say hello, feel free to reach out. I'm always open to new
+            opportunities and collaborations. You can contact me via email,
+            phone, or through the contact form below. I look forward to hearing
+            from you!
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-12">
+              <div class="info-wrap">
+                <div
+                  class="info-item d-flex"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
                 >
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h3>Address</h3>
+                    <p>
+                      Protea Boulevard, Prote Glen 1819, Johannesburg, South
+                      Africa
+                    </p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div
+                  class="info-item d-flex"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>Call Me</h3>
+                    <p>+27 82 842 5440</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div
+                  class="info-item d-flex"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email Me</h3>
+                    <p>
+                      <a href="mailto:shondlanihlayiso@gmail.com"
+                        >shondlanihlayiso@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- /Contact Section -->
     </main>
 
-    <!-- **************************** The Footer ************************-->
-
-    <footer class="footer">
-      <div class="footer__bg">
-        <div class="footer__container container grid">
-          <div>
-            <h1 class="footer__title">Image</h1>
-            <span class="footer__subtitle">Frontend Developer</span>
-          </div>
-          <ul class="footer__links">
-            <li>
-              <a href="#services" class="footer__link">Services</a>
-            </li>
-            <li>
-              <a href="#portfolio" class="footer__link">Portfolio</a>
-            </li>
-            <li>
-              <a href="#education" class="footer__link">Education</a>
-            </li>
-          </ul>
-
-          <div class="footer__socials">
-            <a
-              href="https://www.linkedin.com/in/nhlayiso-shandlani-291630175/"
-              class="footer__social"
-              target="_blank"
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            © <span>Copyright</span>
+            <strong class="px-1 sitename"
+              >Image Shandlani
+              <script>
+                document.write(new Date().getFullYear());
+              </script></strong
             >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a
-              href="https://twitter.com/IShondlani"
-              class="footer__social"
-              target="_blank"
-            >
-              <i class="fa-brands fa-square-twitter"></i>
-            </a>
-            <a
-              href="https://github.com/ImageNhlayisoShandlani"
-              class="footer__social"
-              target="_blank"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </div>
+            <span>All Rights Reserved</span>
+          </p>
         </div>
-
-        <p class="footer__copy">
-          &copy; Image Shandlani 2025 </div> All rights reserved
-        </p>
       </div>
     </footer>
 
-    <!-- **************************** HEADER MARKUP ************************-->
-    <a href="#home" class="scrollup" id="scroll-up">
-      <i class="fa-solid fa-arrow-up scrollup__icon"></i>
-    </a>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script src="js/script.js"></script>
-    
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
